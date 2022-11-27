@@ -29,3 +29,10 @@ string[] GetArrayWithLengthElementsNotGreaterThanOrEqualTo(string[] array, int l
     }
     return newArray;
 }
+
+//4. Разработка метода, который будет выводить массив из элементов отвечающих условиям задачи
+
+void PrintArray(string[] array, string[] arrayResult){
+    Console.Write($"['{String.Join("', '", array)}'] -> ");
+    Console.Write($"['{String.Join("', '", arrayResult)}']");
+}
