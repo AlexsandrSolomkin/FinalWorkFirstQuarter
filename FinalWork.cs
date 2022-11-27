@@ -3,6 +3,12 @@
 string[] array = {"22", "3f24", "i4", "f321"," w", "5673g", "4 i", "1", " "};
 int maxLengthElementArray = 3;
 
+int lenghtNewArray = CounterNecessaryElementsArray(array, maxLengthElementArray);
+
+string[] newArray = GetArrayWithLengthElementsNotGreaterThanOrEqualTo(array, lenghtNewArray, maxLengthElementArray);
+
+PrintArray(array, newArray);
+
 // 2. Разработка метода, который будет обрабатывать строковый массив и выдает количество элементов в массиве, удовлетворяющие требованиям
 
 int CounterNecessaryElementsArray(string[] array, int maxLengthElement){
