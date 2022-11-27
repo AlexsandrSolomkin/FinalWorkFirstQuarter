@@ -15,3 +15,17 @@ int CounterNecessaryElementsArray(string[] array, int maxLengthElement){
     }
     return count;
 }
+
+// 3. Разработка метода, который будет обрабатывать строковый массив и выдает массив со значениями, длинна которых меньше или ровна 3 символам
+
+string[] GetArrayWithLengthElementsNotGreaterThanOrEqualTo(string[] array, int lengthNewArray, int maxLengthElement){
+    string[] newArray = new string[lengthNewArray];
+    for(int i = 0, count = 0; (i < array.Length) && (count < lengthNewArray); i++){
+        string testElementArray = array[i];
+        if(testElementArray.Length <= maxLengthElement){
+            newArray[count] = testElementArray;
+            count++;
+        }
+    }
+    return newArray;
+}
